@@ -5,10 +5,11 @@ const formData = document.querySelectorAll(".formData");
 const closeBtn = document.getElementsByClassName('close');
 
 
-// FONCTION POUR LANCER LE MODAL :
+// FONCTION POUR LANCER LE MODAL
 modalBtn.forEach((btn) => btn.addEventListener("click", () => {
   modalbg.style.display = "block";
 }));
+
 
 // FONCTION POUR FERMER LE MODAL
 closeBtn.addEventListener("click", () => {
