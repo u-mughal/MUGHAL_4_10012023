@@ -1,23 +1,22 @@
-// DOM ELEMENTS MODAL
+// Dom element modal
 const modalbg = document.querySelector(".bground");
 const modalBtn = document.querySelectorAll(".modal-btn");
 const formData = document.querySelectorAll(".formData");
 const closeBtn = document.getElementsByClassName('close');
 
-
-// FONCTION POUR OUVRIR LE MODAL
+// fonction pour ouvrir le modal
 modalBtn.forEach((btn) => btn.addEventListener("click", () => {
   modalbg.style.display = "block";
 }));
 
-
-// FONCTION POUR FERMER LE MODAL
-closeBtn.addEventListener("click", () => {
-  modalbg.style.display = "none";
+// // Fonction pour ouvrir le modal
+Array.from(closeBtn).forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modalbg.style.display = "none";
+  });
 });
 
-
-// FONCTION RESPONSIVE NAVBAR
+// fonction responsive navbar
 function editNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
