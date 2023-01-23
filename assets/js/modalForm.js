@@ -45,14 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Si une des valeurs dans nos inputs de notre Form on affiche un méssage d'érreur.
         if (!formData[0].children[2].value.match(stringRegex) || formData[0].children[2].value.length < 2) {
-            document.getElementById("firstNameErrorMsg").innerText = "Veuillez entrer 2 charactères ou plus pour le champ du prénom";
+            document.getElementById("firstNameErrorMsg").innerText = "Veuillez entrer 2 caractères ou plus pour le champ du prénom";
             control = false;
             // Sinon on affiche rien
         } else {
             document.getElementById("firstNameErrorMsg").innerText = "";
         }
         if (!formData[1].children[2].value.match(stringRegex) || formData[1].children[2].value.length < 2) {
-            document.getElementById("lastNameErrorMsg").innerText = "Veuillez entrer 2 charactères ou plus pour le champ du nom";
+            document.getElementById("lastNameErrorMsg").innerText = "Veuillez entrer 2 caractères ou plus pour le champ du nom";
             control = false;
             // Sinon on affiche rien
         } else {
