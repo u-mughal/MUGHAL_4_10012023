@@ -138,7 +138,6 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
 
                 event.preventDefault();
-                alert("Le formulaire est mal remplis.")
             }
         })
 
